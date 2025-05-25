@@ -4,6 +4,8 @@ import { getLayout } from '@vercel/examples-ui'
 import '@vercel/examples-ui/globals.css'
 import { GoogleTagManager } from '@next/third-parties/google'
 
+// TODO: add utm parameters
+
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const Layout = getLayout<LayoutProps>(Component)
@@ -13,7 +15,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       path="edge-middleware/ab-testing-simple"
     >
       <Component {...pageProps} />
-      // TODO: add utm parameters
       {process.env.NEXT_PUBLIC_GTM_ID && (
         <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />
       )}
