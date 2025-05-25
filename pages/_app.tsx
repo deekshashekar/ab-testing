@@ -4,7 +4,6 @@ import { getLayout } from '@vercel/examples-ui'
 import '@vercel/examples-ui/globals.css'
 import { GoogleTagManager } from '@next/third-parties/google'
 
-// TODO: add utm parameters
 
 
 export default function MyApp({ Component, pageProps }: AppProps) {
