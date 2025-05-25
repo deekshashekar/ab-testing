@@ -8,7 +8,7 @@ import { GoogleTagManager } from '@next/third-parties/google'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const Layout = getLayout<LayoutProps>(Component)
-  console.log('GTM ID from env:', process.env.NEXT_PUBLIC_GTM_ID); // Temporary debug log
+  console.log('GTM ID in console from env:', process.env.NEXT_PUBLIC_GTM_ID); // Temporary debug log
   return (
     <Layout
       title="AB Testing with buckets"
